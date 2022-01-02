@@ -1,0 +1,38 @@
+.container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 70vh;
+}
+.child-container{
+    box-shadow: 0 20px 50px rgba(136, 141, 145, 0.7);
+}
+.card{
+    height: 300px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+
+}
+.btn{
+    display: flex;
+    width: 230px;
+    border: 1px solid green;
+    margin-top: 50px;
+    
+}
+span{
+    font-size: 20px;
+}
+mat-icon{
+    font-size: 20px;
+    font-weight: bold;
+}
+h1{
+    color: tomato;
+    font-weight: bold;
+    font-size: 30px;
+}

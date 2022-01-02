@@ -1,0 +1,25 @@
+.container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.child-container{
+    height: 60vh;
+    margin:30px 30px;
+
+}
+h1,h2{
+    display: inline-block;
+}
+h1{
+    margin:50px 20px;
+    font-size: 35px;
+    font-weight: 800;
+    color: tomato;
+}
+h2{
+    text-align: left;
+}
+span{
+    color: purple
+}

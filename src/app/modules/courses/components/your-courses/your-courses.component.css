@@ -1,0 +1,45 @@
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.card{
+    width: 25%;
+    margin: 35px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 5px;
+    text-align: center;
+    height: calc(100vh/1.7);
+    box-shadow: 0 20px 50px rgba(136, 141, 145, 0.7);
+}
+.image{
+    height: 200px;
+}
+.card-header{
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+}
+.card-title{
+    margin-top: 10px;
+}
+.AddBtn,.goToCrsBtn{
+    width: 80%;
+    margin-bottom: 20px;
+}
+.goToCrsBtn{
+    background-color: rgb(47, 151, 47);
+    color: white;
+}
+.price{
+    font-weight: bolder;
+    color: tomato;
+}
+h1{
+    font-size: 40px;
+    color: gray;
+    font-weight: 800;
+    margin:100px 20px;
+}

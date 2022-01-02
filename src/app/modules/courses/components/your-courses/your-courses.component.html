@@ -1,0 +1,23 @@
+<div class="container" *ngIf="noOfCourses==0">
+    <h1>You don't have any course</h1>
+</div>
+
+<div class="container">
+
+  <mat-card *ngFor="let course of yourCourses" class="card">
+    <mat-card-header class="card-header">
+      <mat-card-title class="card-title">{{course.title}}</mat-card-title>
+    </mat-card-header>
+    <img mat-card-image [src]="course.urlImage" class="image">
+    <mat-card-content>
+      <p>
+        {{course.description}}
+      </p>
+      <span class="price">{{course.price | currency}}</span>
+    </mat-card-content>
+    <mat-card-actions>
+      <button class="goToCrsBtn" mat-raised-button (click)="StartLearning(course.key)">Start Learning Now</button>
+    </mat-card-actions>
+
+  </mat-card>
+</div>

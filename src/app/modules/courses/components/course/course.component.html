@@ -1,0 +1,100 @@
+<mat-card>
+    <mat-card-title class="card-title">
+        <div class="course-head">{{formheadingName}}</div>
+    </mat-card-title>
+    <mat-card-content>
+        <form [formGroup]="courseForm" (ngSubmit)="onSubmit(courseForm.value)">
+            <table class="table">
+                <tr>
+                    <td>
+                        <mat-form-field class="field">
+                            <input formControlName="CourseName" matInput name="courseName"placeholder="Course Name" required>
+                        </mat-form-field>
+                        <mat-error>
+                            <span *ngIf="courseForm.get('CourseName')?.touched && (!courseForm.get('CourseName')?.valid)" >
+                                please enter the course name!
+                            </span>
+                        </mat-error>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <mat-form-field class="field">
+                            <textarea formControlName="Description" matInput name="description"placeholder="description" required></textarea>
+                        </mat-form-field>
+                        <mat-error>
+                            <span *ngIf="courseForm.get('Description')?.touched && (!courseForm.get('Description')?.valid)" >
+                                please enter the description of course!
+                            </span>
+                        </mat-error>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <mat-form-field class="field">
+                            <input formControlName="urlOfImage" matInput name="urlImage"placeholder="url of Image" required>
+                        </mat-form-field>
+                        <mat-error>
+                            <span *ngIf="courseForm.get('urlOfImage')?.touched && (!courseForm.get('urlOfImage')?.valid)" >
+                                please enter the url of image for course!
+                            </span>
+                        </mat-error>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <mat-form-field class="field">
+                            <input formControlName="urlOfVideo" matInput name="urlVideo"placeholder="url of video" required>
+                        </mat-form-field>
+                        <mat-error>
+                            <span *ngIf="courseForm.get('urlOfVideo')?.touched && (!courseForm.get('urlOfVideo')?.valid)" >
+                                please enter the url of video for course!
+                            </span>
+                        </mat-error>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td>
+                        <mat-form-field class="field">
+                            <input formControlName="Price" type="number" matInput name="price"placeholder="course price" required>
+                        </mat-form-field>
+                        <mat-error>
+                            <span *ngIf="courseForm.get('Price')?.touched && (!courseForm.get('Price')?.valid)" >
+                                please enter the price of course!
+                            </span>
+                        </mat-error>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <mat-form-field class="field">
+                            <mat-select formControlName="Category" placeholder="Select Category of course" required>
+                                <mat-option *ngFor="let category of categories" [value]="category.key">{{category.label}}</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                        <mat-error>
+                            <span *ngIf="courseForm.get('Category')?.touched && (!courseForm.get('Category')?.valid)" >
+                                please select the category of course!
+                            </span>
+                        </mat-error>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="add-btn-container">
+                            <button mat-raised-button class="add-btn" [disabled]="!courseForm.valid">{{submitBtnName}}</button>
+                        </div>
+                    </td>
+                </tr>
+
+            </table>
+        </form>
+    </mat-card-content>
+</mat-card>

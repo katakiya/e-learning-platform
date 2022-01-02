@@ -1,0 +1,61 @@
+
+<div class="empty-cart" *ngIf="cartSize<=0" >
+            <h1 class="empty-cart-head">Cart is Empty!</h1>
+</div>
+
+<div class="total courses-list" *ngIf="cartSize>0" >
+    <mat-card>
+        <mat-card-header>
+            <mat-card-title class="total-title">Total : {{getTotalAmout() | currency}}</mat-card-title>
+            <button mat-raised-button color="primary" class="payment-btn" (click)="onNext()">Next</button>
+        </mat-card-header>
+    </mat-card>
+</div>
+
+<div class="courses-list" *ngIf="cartSize>0">
+    <div class="mat-elevation-z8">
+        <table mat-table [dataSource]="cartCourses">
+      
+          <!-- Position Column -->
+          <ng-container matColumnDef="courseName">
+            <th mat-header-cell *matHeaderCellDef style="padding-left: 45px;"> CourseName </th>
+            <td mat-cell *matCellDef="let element" style="width: 8%; padding-left:30px;"> {{element.title}} </td>
+          </ng-container>
+      
+          <!-- Name Column -->
+          <ng-container matColumnDef="Description">
+            <th mat-header-cell *matHeaderCellDef style="padding-left: 135px;"> Description </th>
+            <td mat-cell *matCellDef="let element" style="width: 12%;padding: 10px 20px;"> {{element.description}} </td>
+          </ng-container>
+            
+          <!-- Symbol Column -->
+          <ng-container matColumnDef="Course Image">
+            <th mat-header-cell *matHeaderCellDef style="padding-left: 135px;"> CourseImage </th>
+            <td mat-cell *matCellDef="let element" style="width: 10%;padding: 10px 60px;">
+               <img [src]="element.urlImage" style="height:170px;padding-left: 50px;">
+            </td>
+          </ng-container>
+
+           <!-- Symbol Column -->
+           <ng-container matColumnDef="Price">
+            <th mat-header-cell *matHeaderCellDef style="padding-left: 8px;" > Price </th>
+            <td mat-cell *matCellDef="let element" style="width: 5%;"> {{element.price | currency}} </td>
+          </ng-container>
+
+          <ng-container matColumnDef="Action">
+            <th mat-header-cell *matHeaderCellDef > Actions </th>
+            <td mat-cell *matCellDef="let row" style="width: 5%;padding-left: 7px;">
+               <button mat-icon-button matTooltip="Click to delete" class="iconButton" color="warn" (click)="DeleteCourse(row)">
+                <mat-icon aria-label="Delete">delete</mat-icon>
+            </button>
+               
+            </td>
+
+          </ng-container>
+      
+          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+      
+      </div>
+</div>

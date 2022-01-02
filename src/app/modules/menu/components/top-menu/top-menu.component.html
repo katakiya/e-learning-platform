@@ -1,0 +1,23 @@
+<mat-toolbar color="primary" class="navbar">
+     <mat-toolbar-row>
+         <button mat-icon-button class="btn">
+             <mat-icon class="school-icon">school</mat-icon>
+         </button>
+         <a mat-button routerLink='home' routerLinkActive="active">Home</a>
+         <a mat-button routerLink='courses' routerLinkActive="active">Courses</a>
+         <a mat-button routerLink='about' routerLinkActive="active">About</a>
+         <a mat-button routerLink="cart" routerLinkActive="active" class="right-next">
+              <span class="cart-count">{{sizeOfCart}}</span> 
+             <i class="material-icons">add_shopping_cart</i>
+         </a>
+         <a mat-button *ngIf="!user" routerLink='login' class="right">login</a>
+         <a mat-button *ngIf="user" [mat-menu-trigger-for]="Menu" class="right"><i class="material-icons">person</i></a>
+
+         <mat-menu #Menu="matMenu">
+             <button mat-menu-item  routerLink='your-courses'>Your Courses</button>
+             <button mat-menu-item *ngIf="isAdmin" routerLink="admin-courses">Admin Courses</button>
+             <button mat-menu-item (click)="onLogout()">Logout</button>
+         </mat-menu>
+
+     </mat-toolbar-row>
+</mat-toolbar>

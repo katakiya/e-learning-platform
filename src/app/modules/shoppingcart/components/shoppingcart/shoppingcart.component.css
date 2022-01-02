@@ -1,0 +1,27 @@
+.courses-list{
+    margin:20px 20px;
+    box-shadow: 0 20px 50px rgba(136, 141, 145, 0.7);
+
+}
+
+.total-title{
+    font-size: 35px;
+    margin-top:10px;
+
+}
+.payment-btn{
+    margin-left: 30px;
+    width: 200px;
+}
+.empty-cart{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+.empty-cart-head{
+    margin: 50px 50px;
+    font-weight: 500;
+    font-size: 50px;
+    color: gray;
+}

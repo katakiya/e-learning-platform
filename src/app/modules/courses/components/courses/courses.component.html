@@ -1,0 +1,36 @@
+<mat-tab-group mat-align-tabs="center" animationDuration="300ms">
+  <mat-tab *ngFor="let category of categories" [label]="category.label">
+
+    <div class="container">
+        
+            <mat-card  *ngFor="let course of getCoursesByCategory(category.key)" class="card" >
+                <mat-card-header class="card-header">
+                  <mat-card-title class="card-title">{{course.title}}</mat-card-title>
+                </mat-card-header>
+                <img mat-card-image [src]="course.urlImage" class="image">
+                <mat-card-content>
+                  <p>
+                    {{course.description}}
+                  </p>
+                  <span class="price">{{course.price | currency}}</span>
+                </mat-card-content>
+                <mat-card-actions *ngIf="!isExistInShoppingCart(course.key) && !isBoughtCourse(course.key)">
+                  <button class="AddBtn" mat-raised-button color="primary" (click)="AddToCart(course)">Add to Cart</button>
+                </mat-card-actions>
+
+                <mat-card-actions *ngIf="isExistInShoppingCart(course.key) && !isBoughtCourse(course.key)">
+                  <button class="AddBtn" mat-raised-button color="warn" (click)="DeleteFromCart(course)">Remove From Cart</button>
+                </mat-card-actions>
+
+                <mat-card-actions *ngIf="isBoughtCourse(course.key)">
+                  <button class="goToCrsBtn" mat-raised-button (click)="StartLearning(course.key)">Start Learning Now</button>
+                </mat-card-actions>
+
+            </mat-card>
+        </div>
+       
+    
+   
+  </mat-tab>
+  
+</mat-tab-group>

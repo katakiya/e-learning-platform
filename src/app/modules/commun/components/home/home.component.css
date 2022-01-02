@@ -1,0 +1,46 @@
+.container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 60vh;
+}
+.child-container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+
+}
+h1,h2,h3,h4{
+    display: inline-block;
+    
+}
+h1{
+    font-style: italic;
+    font-weight: 700;
+    font-size: 50px;
+    color: rgb(223, 52, 22);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.c1{
+    color: rgb(32, 158, 32);
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.c2{
+    margin-top: 30px;
+    font-size: 30px;
+    
+}
+h3{
+    font-size: 25px;
+}
+a{
+    margin-top: 20px;
+    font-size: 25px;
+    text-decoration: none;
+}
