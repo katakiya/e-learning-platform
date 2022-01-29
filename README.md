@@ -14,8 +14,6 @@ Link of website : https://e-learning-platform-56d38.web.app
 
 ![e-manage-courses](https://user-images.githubusercontent.com/38484556/151649263-683ff3ae-4541-42c9-96e4-cce0bd7e2523.png)
 
-![e-login](https://user-images.githubusercontent.com/38484556/151649265-202aab33-1a8c-4451-8395-f8445690de7c.png)
-
 ![e-home](https://user-images.githubusercontent.com/38484556/151649266-ca88b3a5-10fd-45b0-a4fb-3160d4d3892e.png)
 
 ![e-courses](https://user-images.githubusercontent.com/38484556/151649267-4d23fe7f-92c7-4e81-85ed-b1a7bfa4e94f.png)
