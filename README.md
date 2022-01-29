@@ -1,27 +1,25 @@
-# ELearningPlatform
+/////////////////////////////////////////////////////// Some Screenshots of my e-learning platform ///////////////////////////////////////////////////////////
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.2.
+![e-your-courses](https://user-images.githubusercontent.com/38484556/151649253-190f78ee-4b90-43cd-bc80-7ac2bd59b684.png)
 
-## Development server
+![e-update-course](https://user-images.githubusercontent.com/38484556/151649258-fad32105-0648-44fd-bbe5-b59087bdc756.png)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+![e-order-sucess](https://user-images.githubusercontent.com/38484556/151649259-a3512945-81f1-43c7-909f-6ad399ffdce4.png)
 
-## Code scaffolding
+![e-order](https://user-images.githubusercontent.com/38484556/151649261-004dbc23-0370-4014-9be3-5a14347ab394.png)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+![e-menu](https://user-images.githubusercontent.com/38484556/151649262-1491e589-e0e7-40bc-a31b-c9db6b726cde.png)
 
-## Build
+![e-manage-courses](https://user-images.githubusercontent.com/38484556/151649263-683ff3ae-4541-42c9-96e4-cce0bd7e2523.png)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+![e-login](https://user-images.githubusercontent.com/38484556/151649265-202aab33-1a8c-4451-8395-f8445690de7c.png)
 
-## Running unit tests
+![e-home](https://user-images.githubusercontent.com/38484556/151649266-ca88b3a5-10fd-45b0-a4fb-3160d4d3892e.png)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+![e-courses](https://user-images.githubusercontent.com/38484556/151649267-4d23fe7f-92c7-4e81-85ed-b1a7bfa4e94f.png)
 
-## Running end-to-end tests
+![e-cart](https://user-images.githubusercontent.com/38484556/151649271-24ff8077-7370-4a95-8f2e-f47b9d6df4b3.png)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+![e-add-course](https://user-images.githubusercontent.com/38484556/151649273-c058a6bd-887d-4fc1-817b-bbc49e88e456.png)
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+![e-about](https://user-images.githubusercontent.com/38484556/151649275-e6d232a8-1237-4e2c-8d1f-196bd31dd831.png)
