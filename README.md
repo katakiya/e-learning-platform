@@ -1,24 +1,24 @@
-// ABOUT THIS APP
+## ABOUT THIS APP
 
-=> This is one e-learning platform in which I am offering some courses.
+ This is one e-learning platform in which I am offering some courses.
 
-=> user can select any course as per their choice , they can add any course in cart and buy it.
+ user can select any course as per their choice , they can add any course in cart and buy it.
 
-=> once the user buy any course , he/she can access the content of that particular course.
+ once the user buy any course , he/she can access the content of that particular course.
 
-=> login is not mendatory to select the courses , but if any user wants to buy any course then login with google is mendatory.
+ login is not mendatory to select the courses , but if any user wants to buy any course then login with google is mendatory.
 
-=> there is one admin(I am the admin right now) for this platform , admin can add the course , update the course, course price , course content , course symbol etc. Any other user can not add or edit the course.
+ there is one admin(I am the admin right now) for this platform , admin can add the course , update the course, course price , course content , course symbol etc.  Any other user can not add or edit the course.
 
-// TECHNOLOGIES USED FOR THIS PLATFORM
+## TECHNOLOGIES USED FOR THIS PLATFORM
 
-=> HTML , CSS , TYPESCRIPT , ANGULAR , FIREBASE
+ HTML , CSS , TYPESCRIPT , ANGULAR , FIREBASE
 
-// LINK OF THE PLATFORM
+## LINK OF THE PLATFORM
 
-=> https://e-learning-platform-56d38.web.app
+ https://e-learning-platform-56d38.web.app
 
-// SOME SCREENSHOTS OF THIS E-LEARNING PLATFORM
+## SOME SCREENSHOTS OF THIS E-LEARNING PLATFORM
 
 ![e-your-courses](https://user-images.githubusercontent.com/38484556/151649253-190f78ee-4b90-43cd-bc80-7ac2bd59b684.png)
 
